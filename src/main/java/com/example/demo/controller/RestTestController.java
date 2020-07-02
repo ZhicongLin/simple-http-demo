@@ -61,7 +61,7 @@ public class RestTestController {
         final AbcTest post = this.restFactory.post(new AbcTest(1));
         final String put = this.restFactory.put(10);
         final String put2 = this.restFactory.put2(new TestParam("1", "2", new TestParam("3", "20")));
-        final JSONArray objects = JSON.parseArray(put);
+        final JSONArray objects = JSON.parseArray(put2);
         List<List<AbcTest>> abcTests = new ArrayList<>();
         for (Object object : objects) {
             JSONArray jo = (JSONArray) object;

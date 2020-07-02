@@ -1,6 +1,6 @@
 logging:
   level:
     com.example: trace
-    org.simpleframework: debug
+    org.simpleframework: info
 server:
   port: 8081
